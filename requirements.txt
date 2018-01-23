@@ -1,0 +1,11 @@
+Flask==0.12.2
+requests
+oauth
+oauth2
+wtforms
+passlib
+flask_ckeditor
+Flask-Images
+flask-restful
+flask-jsonpify
+flask-sqlalchemy

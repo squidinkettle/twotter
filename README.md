@@ -1,7 +1,8 @@
 #Twotter
+
+
+
 Twitter clone with some extra functions
-
-
 Twitter clone where users may register and log in in order to post their thoughts online.
 It also provides a RestFul API information from the databases used in this project
 It is also possible to obtain information from the user's twitter account and convert it in json format

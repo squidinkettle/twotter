@@ -1,0 +1,32 @@
+{%extends 'layout.html'%}
+
+{%block body%}
+<h1>Twoots</h1>
+
+{%for x in feed%}
+<div class="panel panel-default">
+    {%if session.username%}
+        {%if session.username in x[1]%}
+            <div class="panel-heading">
+            <a href="{{url_for('remove_twoot', id = x[0])}}" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <h4>{{x[1]}}<small> Posted {{x[3]}}:</small></h4></div>
+            
+            <div class = "panel-body"> {{x[2]}}</div>
+        
+        {%else%}
+        <div class="panel-heading"><h4>{{x[1]}}<small> Posted {{x[3]}}:</small></h4></div>
+        
+        <div class = "panel-body">{{x[2]}}</div>
+    {%endif%}
+    {%else%}
+    <div class="panel-heading">
+  <h4>{{x[1]}}<small> Posted {{x[3]}}:</small></h4></div>
+  
+  <div class="panel-body">{{x[2]}}</div>
+    {%endif%}
+    
+</div>
+
+{%endfor%}
+
+{%endblock%}

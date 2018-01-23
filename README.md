@@ -1,4 +1,4 @@
-##Twotter
+#Twotter
 Twitter clone with some extra functions
 
 

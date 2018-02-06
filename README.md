@@ -14,3 +14,4 @@ In order to access the API information type the following on the url:
 /user_id
 
 To access specific information for twitter json format, head to twitter_api/main.py and modify the 'info' variable inside legit_twitter() or leave it blank to obtain all the information
+*Note that the user will have to submit a twitter token generated from the twitter developer page
